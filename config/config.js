@@ -61,6 +61,16 @@ var config = {
       }
     },
     {
+      module: 'MMM-MBTA',
+      position: 'top_left', // This can be any of the regions.
+      header: "MBTA:",
+      config: {
+        apikey: 'hjnwdQLuhE6iOxQQNIC4zw',
+        stations:
+        showOnly: ['Subway', 'Train', 'Bus']
+      }
+    },
+    {
       module: "compliments",
       position: "lower_third"
     },
