@@ -66,14 +66,36 @@ var config = {
       header: "MBTA:",
       config: {
         apikey: 'hjnwdQLuhE6iOxQQNIC4zw',
-        stations:
-        showOnly: ['Subway', 'Train', 'Bus']
+        showOnly: ['Subway', 'Train', 'Bus'],
+        stations: [ "Winchester" ]
       }
     },
     {
-      module: "compliments",
-      position: "lower_third"
+
+      module: 'MMM-Scrobbler',
+
+      position: 'top_center',
+      config: {
+        username: 'aarondkk',
+        apikey: '99deb2c2033ae44616de4cbd7d7d7e84',
+        //time interval to search for new song (every 15 seconds)
+        updateInterval: 15 * 1000,
+        //how often should we try to retrieve a song if not listening
+        delayCount: 5,
+        //time interval to search for new song if the 5 times not listening is received.
+        //set this to the same number as updateInterval to ignore this option
+        delayInterval: 120*1000,
+        animationSpeed: 1000,
+        showAlbumArt: true,
+        showMetaData: true,
+        //Determines the position of the meta text. Possible values: top, bottom, left, right
+        alignment: "bottom",
+      }
     },
+    // {
+    //   module: "compliments",
+    //   position: "lower_third"
+    // },
     {
       module: "currentweather",
       position: "top_right",
@@ -99,16 +121,8 @@ var config = {
       config: {
         feeds: [
           {
-            title: "BBC",
-            url: "http://feeds.bbci.co.uk/news/video_and_audio/news_front_page/rss.xml?edition=uk",
-          },
-          {
             title: "NFL",
             url: "http://www.espn.com/espn/rss/nfl/news",
-          },
-          {
-            title: "Soccer",
-            url: "http://soccernet.espn.com/rss/news",
           }
         ],
         showSourceTitle: true,
