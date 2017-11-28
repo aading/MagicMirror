@@ -68,6 +68,7 @@ Temporary Items
 
 # Updated by Aaron to only ignore node_modules
 /modules/node_modules/**
+.idea
 
 # Ignore changes to the custom css files.
 /css/custom.css
