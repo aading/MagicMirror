@@ -1,0 +1,57 @@
+.player{
+margin-top:20px;
+width:200px;
+}
+.album-art-container{
+}
+.album-art{
+width:200px;
+}
+
+.meta{
+}
+
+.track-name{
+font-size:20px;
+font-weight: bold;
+margin: 0;
+}
+.artist-name{
+font-size:20px;
+margin: 0px;}
+
+.album-name{
+font-size:16px;
+margin: 0px;}
+
+.scrobbler-top {
+  display: block;
+}
+
+.scrobbler-top > .meta{
+  margin-bottom: 8px;
+}
+
+.scrobbler-bottom {
+  display: block;
+}
+
+.scrobbler-left {
+  display: inline-flex;
+}
+
+.scrobbler-right {
+  display: inline-flex;
+}
+
+.scrobbler-right > .meta{
+  margin-left: 16px;
+}
+
+.scrobbler-left {
+  display: inline-flex;
+}
+
+.scrobbler-left > .meta{
+  margin-right: 16px;
+}

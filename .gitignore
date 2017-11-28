@@ -61,10 +61,13 @@ Temporary Items
 !/modules/node_helper/**
 
 # Ignore all modules except the default modules.
-/modules/**
-!/modules/default
-!/modules/default/**
+#/modules/**
+#!/modules/default
+#!/modules/default/**
 !/modules/README.md**
+
+# Updated by Aaron to only ignore node_modules
+/modules/node_modules/**
 
 # Ignore changes to the custom css files.
 /css/custom.css
