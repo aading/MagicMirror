@@ -102,7 +102,9 @@ var config = {
       config: {
         location: "Woburn",
         locationID: "4956032",  //ID from http://www.openweathermap.org/help/city_list.txt
-        appid: "046da1784c6eab7f9e95c28d1bc20e44"
+        appid: "046da1784c6eab7f9e95c28d1bc20e44",
+        units: "imperial",
+        degreeLabel: "true"
       }
     },
     {
@@ -112,7 +114,9 @@ var config = {
       config: {
         location: "Woburn",
         locationID: "4956032",  //ID from http://www.openweathermap.org/help/city_list.txt
-        appid: "046da1784c6eab7f9e95c28d1bc20e44"
+        appid: "046da1784c6eab7f9e95c28d1bc20e44",
+        units: "imperial",
+        degreeLabel: "true"
       }
     },
     {
