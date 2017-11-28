@@ -35,7 +35,7 @@ var config = {
     },
     {
       module: "clock",
-      position: "top_center",
+      position: "top_left",
       config: {
         // The config property is optional.
         // See 'Configuration options' for more information.
