@@ -114,6 +114,18 @@ var config = {
       }
     },
     {
+      module: 'MMM-GoogleMapsTraffic',
+      position: 'bottom_left',
+      config: {
+        key: 'AIzaSyC1RkVgwzb3fj8B0R0w6wLXRXwPcpBBG1Y',
+        lat: 42.447314,
+        lng: 71.189380,
+        zoom: 11,
+        height: '400px',
+        width: '300px'
+      }
+    },
+    {
       module: "newsfeed",
       position: "bottom_bar",
       config: {
