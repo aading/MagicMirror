@@ -71,32 +71,6 @@ var config = {
       }
     },
     {
-
-      module: 'MMM-Scrobbler',
-
-      position: 'top_center',
-      config: {
-        username: 'aarondkk',
-        apikey: '99deb2c2033ae44616de4cbd7d7d7e84',
-        //time interval to search for new song (every 15 seconds)
-        updateInterval: 15 * 1000,
-        //how often should we try to retrieve a song if not listening
-        delayCount: 5,
-        //time interval to search for new song if the 5 times not listening is received.
-        //set this to the same number as updateInterval to ignore this option
-        delayInterval: 120*1000,
-        animationSpeed: 1000,
-        showAlbumArt: true,
-        showMetaData: true,
-        //Determines the position of the meta text. Possible values: top, bottom, left, right
-        alignment: "bottom",
-      }
-    },
-    // {
-    //   module: "compliments",
-    //   position: "lower_third"
-    // },
-    {
       module: "currentweather",
       position: "top_right",
       config: {
@@ -117,6 +91,26 @@ var config = {
         appid: "046da1784c6eab7f9e95c28d1bc20e44",
         units: "imperial",
         degreeLabel: "true"
+      }
+    },
+    {
+      module: 'MMM-Scrobbler',
+      position: 'top_right',
+      config: {
+        username: 'aarondkk',
+        apikey: '99deb2c2033ae44616de4cbd7d7d7e84',
+        //time interval to search for new song (every 15 seconds)
+        updateInterval: 15 * 1000,
+        //how often should we try to retrieve a song if not listening
+        delayCount: 5,
+        //time interval to search for new song if the 5 times not listening is received.
+        //set this to the same number as updateInterval to ignore this option
+        delayInterval: 120*1000,
+        animationSpeed: 1000,
+        showAlbumArt: true,
+        showMetaData: true,
+        //Determines the position of the meta text. Possible values: top, bottom, left, right
+        alignment: "bottom",
       }
     },
     {
