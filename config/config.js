@@ -119,7 +119,7 @@ var config = {
       config: {
         key: 'AIzaSyC1RkVgwzb3fj8B0R0w6wLXRXwPcpBBG1Y',
         lat: 42.447314,
-        lng: 71.189380,
+        lng: -71.189380,
         zoom: 11,
         height: '400px',
         width: '300px'
