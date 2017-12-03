@@ -114,8 +114,21 @@ var config = {
       }
     },
     {
+      module: 'MMM-Trello',
+      header: 'To do list',
+      position: 'top_right', // This can be any of the regions, best results in center regions.
+      config: {
+        // See 'Configuration options' for more information.
+        api_key: "18483816fc662cc173f0a69bd0513a1c",
+        token: "2f373e422105b4e923559b538190063441d588d09da980a0613a5ae2378ca613",
+        list: "5a2340c1392d751026aea0fe",
+        wholeList: 'true',
+      }
+    },
+    {
       module: 'MMM-GoogleMapsTraffic',
       position: 'top_left',
+      header: 'Traffic Info',
       config: {
         key: 'AIzaSyC1RkVgwzb3fj8B0R0w6wLXRXwPcpBBG1Y',
         lat: 42.447314,
