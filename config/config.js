@@ -126,6 +126,18 @@ var config = {
       }
     },
     {
+      module: 'MMM-Trello',
+      header: 'To buy list',
+      position: 'top_right', // This can be any of the regions, best results in center regions.
+      config: {
+        // See 'Configuration options' for more information.
+        api_key: "18483816fc662cc173f0a69bd0513a1c",
+        token: "2f373e422105b4e923559b538190063441d588d09da980a0613a5ae2378ca613",
+        list: "5a2341123f41af294334bf5e",
+        wholeList: 'true',
+      }
+    },
+    {
       module: 'MMM-GoogleMapsTraffic',
       position: 'top_left',
       header: 'Traffic Info',
