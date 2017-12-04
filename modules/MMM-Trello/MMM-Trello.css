@@ -1,7 +1,13 @@
-.checklist-wrapper {
+.trello-list .card-title {
+    text-align: left;
+    font-size: 0.7em;
+}
+
+.trello-list .checklist-wrapper {
 
 }
 
-.checklist-item {
+.trello-list .checklist-item {
     text-align: left;
+    padding-left: 1em;
 }

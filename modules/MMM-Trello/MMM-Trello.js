@@ -109,7 +109,7 @@ Module.register("MMM-Trello", {
     // Override dom generator.
     getDom: function () {
         var wrapper = document.createElement("div");
-
+        wrapper.className = "trello-list";
         if (this.activeItem >= this.listContent.length) {
             this.activeItem = 0;
         }
@@ -127,7 +127,7 @@ Module.register("MMM-Trello", {
                 for (card = startat; card <= endat; card++) {
                     if (this.config.showTitle || this.config.showDueDate) {
                         var name = document.createElement("div");
-                        name.className = "bright medium light";
+                        name.className = "bright medium light card-title";
 
                         content = "";
                         if (this.config.showTitle) {

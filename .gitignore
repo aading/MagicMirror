@@ -71,7 +71,7 @@ Temporary Items
 .idea
 
 # Ignore changes to the custom css files.
-/css/custom.css
+# /css/custom.css
 
 # Vim
 ## swap

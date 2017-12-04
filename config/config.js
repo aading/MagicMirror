@@ -115,25 +115,13 @@ var config = {
     },
     {
       module: 'MMM-Trello',
-      header: 'To do list',
+      header: 'Home Reminder',
       position: 'top_right', // This can be any of the regions, best results in center regions.
       config: {
         // See 'Configuration options' for more information.
         api_key: "18483816fc662cc173f0a69bd0513a1c",
         token: "2f373e422105b4e923559b538190063441d588d09da980a0613a5ae2378ca613",
-        list: "5a2340c1392d751026aea0fe",
-        wholeList: 'true',
-      }
-    },
-    {
-      module: 'MMM-Trello',
-      header: 'To buy list',
-      position: 'top_right', // This can be any of the regions, best results in center regions.
-      config: {
-        // See 'Configuration options' for more information.
-        api_key: "18483816fc662cc173f0a69bd0513a1c",
-        token: "2f373e422105b4e923559b538190063441d588d09da980a0613a5ae2378ca613",
-        list: "5a2341123f41af294334bf5e",
+        list: "5a240991f714c6bf237857c3",
         wholeList: 'true',
       }
     },
@@ -143,9 +131,9 @@ var config = {
       header: 'Traffic Info',
       config: {
         key: 'AIzaSyC1RkVgwzb3fj8B0R0w6wLXRXwPcpBBG1Y',
-        lat: 42.447314,
-        lng: -71.189380,
-        zoom: 11,
+        lat: 42.44481,
+        lng: -71.1718486,
+        zoom: 12,
         height: '600px',
         width: '400px'
       }
