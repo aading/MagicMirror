@@ -40,7 +40,8 @@ var config = {
         // The config property is optional.
         // See 'Configuration options' for more information.
         // `digital`, `analog`, or `both` <br> **Default value:** `digital`
-        displayType: 'analog'
+        displayType: 'analog',
+        analogFace: 'face-010',
       }
     },
     {
