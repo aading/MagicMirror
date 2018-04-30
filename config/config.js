@@ -42,6 +42,7 @@ var config = {
         // `digital`, `analog`, or `both` <br> **Default value:** `digital`
         displayType: 'analog',
         analogFace: 'face-010',
+        displaySeconds: false
       }
     },
     {
@@ -49,6 +50,11 @@ var config = {
       header: "US Holidays",
       position: "top_left",
       config: {
+        maximumEntries: 5, // Total Maximum Entries
+        maximumNumberOfDays: 14,
+        maxTitleLength: 15,
+        wrapEvents: true, // wrap events to multiple lines breaking at maxTitleLength
+        fetchInterval: 5 * 60 * 1000,
         calendars: [
           {
             symbol: "calendar-check-o",
@@ -95,25 +101,87 @@ var config = {
       }
     },
     {
-      module: 'MMM-Scrobbler',
-      position: 'top_right',
+      module: 'MMM-xiaomi',
+      position: 'top_left',
+      header: 'Temperature / Humidity',  // This is optional
       config: {
-        username: 'aarondkk',
-        apikey: '99deb2c2033ae44616de4cbd7d7d7e84',
-        //time interval to search for new song (every 15 seconds)
-        updateInterval: 15 * 1000,
-        //how often should we try to retrieve a song if not listening
-        delayCount: 5,
-        //time interval to search for new song if the 5 times not listening is received.
-        //set this to the same number as updateInterval to ignore this option
-        delayInterval: 120*1000,
-        animationSpeed: 1000,
-        showAlbumArt: true,
-        showMetaData: true,
-        //Determines the position of the meta text. Possible values: top, bottom, left, right
-        alignment: "bottom",
+        gatewayIP: '192.168.1.75',
+        gatewayToken: '38f23cda57f2a22963338f03aa4d0b59',
+        showWindow: true,
+        celcius: true,
+        showVentilation: false,
+        showLights: false,
+        audioNotifications: false,
+        showTend: true,
+        rooms:  [
+          {
+            name: 'Outside',
+            sortOrder: 1,
+            devices : ['158d000223f705']
+          },
+          {
+            name: 'Master',
+            sortOrder: 2,
+            devices : ['158d0001f2abe2']
+          },
+          {
+            name: 'Kayley',
+            sortOrder: 3,
+            devices : ['158d00019cbad8']
+          },
+          {
+            name: 'Guest',
+            sortOrder: 4,
+            devices : ['158d0001c1578c']
+          },
+          {
+            name: 'Grandparents',
+            sortOrder: 5,
+            devices : ['158d000223fca1']
+          },
+          {
+            name: 'Kitchen',
+            sortOrder: 6,
+            devices : ['158d00016ffb90']
+          },
+          {
+            name: 'Living',
+            sortOrder: 7,
+            devices : ['158d0001f4effe']
+          },
+          {
+            name: 'Family',
+            sortOrder: 8,
+            devices : ['158d000223f56e']
+          },
+          {
+            name: 'Garage',
+            sortOrder: 9,
+            devices : ['158d0001f515ec']
+          }
+        ]
       }
     },
+    // {
+    //   module: 'MMM-Scrobbler',
+    //   position: 'top_right',
+    //   config: {
+    //     username: 'aarondkk',
+    //     apikey: '99deb2c2033ae44616de4cbd7d7d7e84',
+    //     //time interval to search for new song (every 15 seconds)
+    //     updateInterval: 15 * 1000,
+    //     //how often should we try to retrieve a song if not listening
+    //     delayCount: 5,
+    //     //time interval to search for new song if the 5 times not listening is received.
+    //     //set this to the same number as updateInterval to ignore this option
+    //     delayInterval: 120*1000,
+    //     animationSpeed: 1000,
+    //     showAlbumArt: true,
+    //     showMetaData: true,
+    //     //Determines the position of the meta text. Possible values: top, bottom, left, right
+    //     alignment: "bottom",
+    //   }
+    // },
     {
       module: 'MMM-Trello',
       header: 'Home Reminder',
