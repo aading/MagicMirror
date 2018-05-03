@@ -101,10 +101,10 @@ Module.register('MMM-xiaomi', {
   html: {
     // For text layout
     table: '<table class="xsmall">{0}</table>',
-    // Row parameters: 0: room name, 1: temperature, 2: humidity
+    // Row parameters: 0: room name, 1: temperature, 2: humidity, 3: alternative temperature
     col: '<td align="left" class="normal light small">{0}</td>',
     colTrend: '<td align="center" class="fa fa-angle-{0}"></td>',
-    colTemperature: '<td align="left" class="dimmed light xsmall">{0}°{1}</td>',
+    colTemperature: '<td align="left" class="dimmed light xsmall">{0}°{1} ({2}°{3})</td>',
     colHumidity: '<td align="left" class="dimmed light xsmall">{0}%</td>',
     colVentilationIcon: '<td align="center" class="fa fa-1 fa-refresh {0} xm-icon"></td>',
     colWindowIcon: '<td align="center" class="fa fa-1 fa-star {0} xm-icon"></td>',
@@ -480,6 +480,7 @@ Module.register('MMM-xiaomi', {
         if (room != null) {
 
           var temp;
+          var tempalternative;
           var humid;
           var temperatureTrend;
           var humidityTrend;
@@ -495,12 +496,18 @@ Module.register('MMM-xiaomi', {
 
           // Convert temperature to kelving if requried
           if (!this.config.celcius) {
+            // Store the original value
+            tempalternative = temp;
             // C = (5/9) * (F - 32)
             temp = temp * 9 / 5 + 32;
+          }
+          else{
+            tempalternative = temp * 9 / 5 + 32;
           }
 
           // Format temperatur and humidity by rounding
           temp = Math.round(temp * 10) / 10
+          tempalternative = Math.round(tempalternative * 10) / 10
           humid = Math.round(humid)
 
           // Fist the basic column date (room name, temperature and humidity)
@@ -508,7 +515,7 @@ Module.register('MMM-xiaomi', {
           if (this.config.showTrend) {
             currCol += this.html.colTrend.format(temperatureTrend)
           }
-          currCol += this.html.colTemperature.format(temp, this.config.celcius ? "C" : "F");
+          currCol += this.html.colTemperature.format(temp, this.config.celcius ? "C" : "F", tempalternative, this.config.celcius ? "F" : "C");
           if (this.config.showTrend) {
             currCol += this.html.colTrend.format(humidityTrend)
           }

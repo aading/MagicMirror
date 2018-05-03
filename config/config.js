@@ -107,12 +107,13 @@ var config = {
       config: {
         gatewayIP: '192.168.1.75',
         gatewayToken: '38f23cda57f2a22963338f03aa4d0b59',
+        outsideSensorId: '158d000223f705',
         showWindow: true,
-        celcius: true,
-        showVentilation: false,
+        celcius: false,
+        showVentilation: true,
         showLights: false,
         audioNotifications: false,
-        showTend: true,
+        showTrend: true,
         rooms:  [
           {
             name: 'Outside',
