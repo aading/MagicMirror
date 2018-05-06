@@ -16,10 +16,10 @@ var config = {
                         // Default, when address config is left out, is "localhost"
   port: 8084,
   ipWhitelist: ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.1.1/255"], // Set [] to allow all IP addresses
-                                                         // or add a specific IPv4 of 192.168.1.5 :
-                                                         // ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.1.5"],
-                                                         // or IPv4 range of 192.168.3.0 --> 192.168.3.15 use CIDR format :
-                                                         // ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.3.0/28"],
+  // or add a specific IPv4 of 192.168.1.5 :
+  // ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.1.5"],
+  // or IPv4 range of 192.168.3.0 --> 192.168.3.15 use CIDR format :
+  // ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.3.0/28"],
 
   language: "en",
   timeFormat: 24,
@@ -74,7 +74,7 @@ var config = {
       config: {
         apikey: 'hjnwdQLuhE6iOxQQNIC4zw',
         showOnly: ['Subway', 'Train', 'Bus'],
-        stations: [ "Winchester" ]
+        stations: ["Winchester"]
       }
     },
     {
@@ -101,6 +101,17 @@ var config = {
       }
     },
     {
+      //rtsp://admin:123456@192.168.1.254:80/live/ch0
+      module: 'MMM-RTSPStream',
+      position: 'top_left',
+      config: {
+        stream1: {
+          name: 'BigBuckBunny Test Stream',
+          url: 'rtsp://admin:123456@192.168.1.254:80/live/ch0',
+        }
+      }
+    },
+    {
       module: 'MMM-xiaomi',
       position: 'top_left',
       header: 'Temperature / Humidity',  // This is optional
@@ -114,51 +125,51 @@ var config = {
         showLights: false,
         audioNotifications: false,
         showTrend: true,
-        rooms:  [
+        rooms: [
           {
             name: 'Outside',
             sortOrder: 1,
-            devices : ['158d000223f705']
+            devices: ['158d000223f705']
           },
           {
             name: 'Master',
             sortOrder: 2,
-            devices : ['158d0001f2abe2']
+            devices: ['158d0001f2abe2']
           },
           {
             name: 'Kayley',
             sortOrder: 3,
-            devices : ['158d00019cbad8']
+            devices: ['158d00019cbad8']
           },
           {
             name: 'Guest',
             sortOrder: 4,
-            devices : ['158d0001c1578c']
+            devices: ['158d0001c1578c']
           },
           {
             name: 'Grandparents',
             sortOrder: 5,
-            devices : ['158d000223fca1']
+            devices: ['158d000223fca1']
           },
           {
             name: 'Kitchen',
             sortOrder: 6,
-            devices : ['158d00016ffb90']
+            devices: ['158d00016ffb90']
           },
           {
             name: 'Living',
             sortOrder: 7,
-            devices : ['158d0001f4effe']
+            devices: ['158d0001f4effe']
           },
           {
             name: 'Family',
             sortOrder: 8,
-            devices : ['158d000223f56e']
+            devices: ['158d000223f56e']
           },
           {
             name: 'Garage',
             sortOrder: 9,
-            devices : ['158d0001f515ec']
+            devices: ['158d0001f515ec']
           }
         ]
       }
