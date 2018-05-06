@@ -101,17 +101,6 @@ var config = {
       }
     },
     {
-      //rtsp://admin:123456@192.168.1.254:80/live/ch0
-      module: 'MMM-RTSPStream',
-      position: 'top_left',
-      config: {
-        stream1: {
-          name: 'BigBuckBunny Test Stream',
-          url: 'rtsp://admin:123456@192.168.1.254:80/live/ch0',
-        }
-      }
-    },
-    {
       module: 'MMM-xiaomi',
       position: 'top_left',
       header: 'Temperature / Humidity',  // This is optional
