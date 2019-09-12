@@ -63,6 +63,10 @@ var config = {
           {
             symbol: "calendar",
             url: "https://calendar.google.com/calendar/ical/aaron.ding%40gmail.com/private-2390b8aa2c881dd14a6ae5a848b9ed07/basic.ics"
+          },
+          {
+            symbol: "family",
+            url: "https://calendar.google.com/calendar/ical/8ftqk3rhmin9lv0s2g1rmjepe0%40group.calendar.google.com/private-524fa3044e654b38a05b2cb5751731a9/basic.ics"
           }
         ]
       }
@@ -128,7 +132,7 @@ var config = {
           {
             name: 'Grandparents',
             sortOrder: 5,
-            devices: ['158d000223fca1']
+            devices: ['158d0001f515ec']
           },
           {
             name: 'Kitchen',
@@ -144,11 +148,6 @@ var config = {
             name: 'Family',
             sortOrder: 8,
             devices: ['158d000223f56e']
-          },
-          {
-            name: 'Garage',
-            sortOrder: 9,
-            devices: ['158d0001f515ec']
           }
         ]
       }
