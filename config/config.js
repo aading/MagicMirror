@@ -184,19 +184,19 @@ var config = {
         wholeList: 'true',
       }
     },
-    {
-      module: 'MMM-GoogleMapsTraffic',
-      position: 'top_left',
-      header: 'Traffic Info',
-      config: {
-        key: 'AIzaSyC1RkVgwzb3fj8B0R0w6wLXRXwPcpBBG1Y',
-        lat: 42.44481,
-        lng: -71.1718486,
-        zoom: 12,
-        height: '600px',
-        width: '400px'
-      }
-    },
+    // {
+    //   module: 'MMM-GoogleMapsTraffic',
+    //   position: 'top_left',
+    //   header: 'Traffic Info',
+    //   config: {
+    //     key: 'AIzaSyC1RkVgwzb3fj8B0R0w6wLXRXwPcpBBG1Y',
+    //     lat: 42.44481,
+    //     lng: -71.1718486,
+    //     zoom: 12,
+    //     height: '600px',
+    //     width: '400px'
+    //   }
+    // },
     {
       module: "newsfeed",
       position: "bottom_bar",
