@@ -46,32 +46,6 @@ var config = {
       }
     },
     {
-      module: "calendar",
-      header: "US Holidays",
-      position: "top_left",
-      config: {
-        maximumEntries: 5, // Total Maximum Entries
-        maximumNumberOfDays: 14,
-        maxTitleLength: 15,
-        wrapEvents: true, // wrap events to multiple lines breaking at maxTitleLength
-        fetchInterval: 5 * 60 * 1000,
-        calendars: [
-          {
-            symbol: "calendar-check-o",
-            url: "webcal://www.calendarlabs.com/templates/ical/US-Holidays.ics"
-          },
-          {
-            symbol: "calendar",
-            url: "https://calendar.google.com/calendar/ical/aaron.ding%40gmail.com/private-2390b8aa2c881dd14a6ae5a848b9ed07/basic.ics"
-          },
-          {
-            symbol: "family",
-            url: "https://calendar.google.com/calendar/ical/8ftqk3rhmin9lv0s2g1rmjepe0%40group.calendar.google.com/private-524fa3044e654b38a05b2cb5751731a9/basic.ics"
-          }
-        ]
-      }
-    },
-    {
       module: "currentweather",
       position: "top_right",
       config: {
@@ -184,19 +158,53 @@ var config = {
         wholeList: 'true',
       }
     },
-    // {
-    //   module: 'MMM-GoogleMapsTraffic',
-    //   position: 'top_left',
-    //   header: 'Traffic Info',
-    //   config: {
-    //     key: 'AIzaSyC1RkVgwzb3fj8B0R0w6wLXRXwPcpBBG1Y',
-    //     lat: 42.44481,
-    //     lng: -71.1718486,
-    //     zoom: 12,
-    //     height: '600px',
-    //     width: '400px'
-    //   }
-    // },
+    {
+      //disabled:true,
+      module: 'MMM-CalendarExt',
+      position: "fullscreen_below",
+      config: {
+        system: {
+          show: ["daily", "upcoming"],
+          locale: 'en',
+          redrawInterval:60000,
+        },
+        views: {
+          daily: {
+            position:'bottom_bar',
+            counts:7,
+          },
+          upcoming: {
+            position:'top_left',
+            limit:5
+          },
+        },
+        defaultCalendar: {
+          maxEntries:50,
+          maxDays:30,
+          interval: 1000*60*5,
+        },
+        calendars :[
+          {
+            name: "holiday",
+            symbol: "calendar-o",
+            styleName: "style1",
+            url: "webcal://www.calendarlabs.com/templates/ical/US-Holidays.ics"
+          },
+          {
+            name: "holiday",
+            symbol: "calendar-o",
+            styleName: "style1",
+            url: "https://calendar.google.com/calendar/ical/aaron.ding%40gmail.com/private-2390b8aa2c881dd14a6ae5a848b9ed07/basic.ics"
+          },
+          {
+            name: "holiday",
+            symbol: "calendar-o",
+            styleName: "style1",
+            url: "https://calendar.google.com/calendar/ical/8ftqk3rhmin9lv0s2g1rmjepe0%40group.calendar.google.com/private-524fa3044e654b38a05b2cb5751731a9/basic.ics"
+          },
+        ],
+      }
+    },
     {
       module: "newsfeed",
       position: "bottom_bar",
