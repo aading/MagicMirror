@@ -104,7 +104,7 @@ var config = {
             devices: ['158d0001c1578c']
           },
           {
-            name: 'Grandparents',
+            name: 'Au Pair',
             sortOrder: 5,
             devices: ['158d0001f515ec']
           },
