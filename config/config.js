@@ -96,7 +96,7 @@ var config = {
           {
             name: 'Kayley',
             sortOrder: 3,
-            devices: ['158d00019cbad8']
+            devices: ['158d000223f56e']
           },
           {
             name: 'Guest',
@@ -117,11 +117,6 @@ var config = {
             name: 'Living',
             sortOrder: 7,
             devices: ['158d0001f4effe']
-          },
-          {
-            name: 'Family',
-            sortOrder: 8,
-            devices: ['158d000223f56e']
           }
         ]
       }
