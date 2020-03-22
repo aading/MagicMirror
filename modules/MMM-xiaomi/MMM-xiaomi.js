@@ -102,16 +102,16 @@ Module.register('MMM-xiaomi', {
     // For text layout
     table: '<table class="xsmall">{0}</table>',
     // Row parameters: 0: room name, 1: temperature, 2: humidity, 3: alternative temperature
-    col: '<td align="left" class="normal light small">{0}</td>',
+    col: '<td align="left" class="bright bold small">{0}</td>',
     colTrend: '<td align="center" class="fa fa-angle-{0}"></td>',
-    colTemperature: '<td align="left" class="dimmed light xsmall">{0}°{1} ({2}°{3})</td>',
-    colHumidity: '<td align="left" class="dimmed light xsmall">{0}%</td>',
+    colTemperature: '<td align="left" class="bright bold xsmall">{0}°{1} ({2}°{3})</td>',
+    colHumidity: '<td align="left" class="bright bold xsmall">{0}%</td>',
     colVentilationIcon: '<td align="center" class="fa fa-1 fa-refresh {0} xm-icon"></td>',
     colWindowIcon: '<td align="center" class="fa fa-1 fa-star {0} xm-icon"></td>',
     colLightIcon: '<td align="center" class="fa fa-1 fa-power-off {0} xm-icon"></td>',
     colHeatingIcon: '<td align="center" class="fa fa-fire {0}">',
     row: '<tr>{0}{1}</tr>',
-    loading: '<div class="dimmed light xsmall">Connecting to Xiaomi gateway...</div>',
+    loading: '<div class="bright light xsmall">Connecting to Xiaomi gateway...</div>',
     
     // For grid layout
     // roomDiv parameter: 0: room position (left/right), 1: room name, 2: temperature, 3: humidity, 4: door state, 5: light state, 6: vent state
