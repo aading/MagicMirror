@@ -11,7 +11,9 @@ coverage
 .grunt
 .lock-wscript
 build/Release
-node_modules
+/node_modules/**/*
+fonts/node_modules/**/*
+vendor/node_modules/**/*
 jspm_modules
 .npm
 .node_repl_history
@@ -57,12 +59,6 @@ Temporary Items
 .directory
 .Trash-*
 
-# Various Magic Mirror ignoramuses and anti-ignoramuses.
-
-# Don't ignore the node_helper core module.
-!/modules/node_helper
-!/modules/node_helper/**
-
 # Ignore all modules except the default modules.
 #/modules/**
 #!/modules/default
@@ -85,3 +81,5 @@ Temporary Items
 *.orig
 *.rej
 *.bak
+
+!/tests/node_modules/**/*
