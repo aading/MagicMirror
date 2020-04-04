@@ -154,31 +154,41 @@ var config = {
       }
     },
     {
-      //disabled:true,
-      module: 'MMM-CalendarExt',
-      position: "fullscreen_below",
+      module: 'MMM-CalendarExt2',
       config: {
-        system: {
-          show: ["daily", "upcoming"],
-          locale: 'en',
-          redrawInterval:60000,
-        },
-        views: {
-          daily: {
-            position:'bottom_bar',
-            counts:7,
+        rotateInterval: 90*1000,
+        scenes:[
+          {
+            name: "DEFAULT",
+            views: ["upcoming","Overview Private"],
           },
-          upcoming: {
-            position:'top_left',
-            limit:5
+        ],
+        views:[
+          {
+            name: "upcoming",
+            mode: "upcoming",
+            position: "top_left",
+            maxItems: 5,
+            maxDays: 1,
+            locale: "en",
+            hideOverflow: false,
+            filterPassedEvent: true,
+            calendars: ["holiday","family"],
           },
-        },
-        defaultCalendar: {
-          maxEntries:50,
-          maxDays:30,
-          interval: 1000*60*5,
-        },
-        calendars :[
+          {
+            name: "Overview Private",
+            title: "Private Calendars",
+            mode: "daily",
+            type: "row",
+            position: "bottom_bar",
+            slotCount: 5,
+            locale: "en",
+            hideOverflow: false,
+            filterPassedEvent: true,
+            calendars: ["holiday","family","aaron"],
+          },
+        ],
+        calendars: [
           {
             name: "holiday",
             symbol: "calendar-o",
@@ -186,33 +196,19 @@ var config = {
             url: "webcal://www.calendarlabs.com/templates/ical/US-Holidays.ics"
           },
           {
-            name: "holiday",
+            name: "aaron",
             symbol: "calendar-o",
             styleName: "style1",
             url: "https://calendar.google.com/calendar/ical/aaron.ding%40gmail.com/private-2390b8aa2c881dd14a6ae5a848b9ed07/basic.ics"
           },
           {
-            name: "holiday",
+            name: "family",
             symbol: "calendar-o",
             styleName: "style1",
             url: "https://calendar.google.com/calendar/ical/8ftqk3rhmin9lv0s2g1rmjepe0%40group.calendar.google.com/private-524fa3044e654b38a05b2cb5751731a9/basic.ics"
           },
         ],
-      }
-    },
-    {
-      module: "newsfeed",
-      position: "bottom_bar",
-      config: {
-        feeds: [
-          {
-            title: "NFL",
-            url: "http://www.espn.com/espn/rss/nfl/news",
-          }
-        ],
-        showSourceTitle: true,
-        showPublishDate: true
-      }
+      },
     },
   ]
 
