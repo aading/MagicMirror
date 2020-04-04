@@ -160,21 +160,10 @@ var config = {
         scenes:[
           {
             name: "DEFAULT",
-            views: ["upcoming","Overview Private"],
+            views: ["Overview Private"],
           },
         ],
         views:[
-          {
-            name: "upcoming",
-            mode: "upcoming",
-            position: "top_left",
-            maxItems: 5,
-            maxDays: 1,
-            locale: "en",
-            hideOverflow: false,
-            filterPassedEvent: true,
-            calendars: ["holiday","family"],
-          },
           {
             name: "Overview Private",
             title: "Private Calendars",

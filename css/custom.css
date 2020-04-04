@@ -12,6 +12,9 @@
 .align-center {
     text-align: center;
 }
+.CX2 .daily .event .eventTitle{
+    white-space: pre-wrap;
+}
 .CX2 .agenda .eventSub {
     display:none;
 }
@@ -42,15 +45,15 @@
 .CX2 .slot .slotFooter {
     display: none;
 }
-.CX2 .event[data-calendar-name="Andre"],
-.CX2 .event[data-calendar-name="Andre Work"] {
+.CX2 .event[data-calendar-name="family"],
+.CX2 .event[data-calendar-name="family"] {
     border-left: #ce4138 solid;
 }
-.CX2 .event[data-calendar-name="Anja"],
-.CX2 .event[data-calendar-name="Anja Work"] {
+.CX2 .event[data-calendar-name="aaron"],
+.CX2 .event[data-calendar-name="aaron"] {
     border-left: #c632ff solid;
 }
-.CX2 .event[data-calendar-name="Tobi"],
-.CX2 .event[data-calendar-name="Tobi Shared"] {
+.CX2 .event[data-calendar-name="holiday"],
+.CX2 .event[data-calendar-name="holiday"] {
     border-left: #d2cf2a solid;
 }
