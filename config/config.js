@@ -154,6 +154,24 @@ var config = {
       }
     },
     {
+      module: "MMM-AVStock",
+      position: "bottom_bar", //"bottom_bar" is better for `mode:ticker`
+      config: {
+        apiKey : "76JZ6Y8GVAVTDQ0S", // https://www.alphavantage.co/
+        timeFormat: "YYYY-MM-DD HH:mm:ss",
+        symbols : ["amzn", "GOOGL", "tsla"],
+        alias: ["Amazon", "Google", "Tesla"], //Easy name of each symbol. When you use `alias`, the number of symbols and alias should be the same. If value is null or "", symbol string will be used by default.
+        tickerDuration: 300, // Ticker will be cycled once per this second.
+        chartDays: 90, //For `mode:series`, how much daily data will be taken. (max. 90)
+        poolInterval : 1000*15, // (Changed in ver 1.1.0) - Only For Premium Account
+        mode : "table", // "table", "ticker", "series"
+        decimals: 4, // number o decimals for all values including decimals (prices, price changes, change%...)
+        candleSticks : false, //show candle sticks if mode is Series
+        coloredCandles : false, //colored bars: red and green for negative and positive candles
+        premiumAccount: false, // To change poolInterval, set this to true - Only For Premium Account
+      }
+    },
+    {
       module: 'MMM-CalendarExt2',
       config: {
         rotateInterval: 90*1000,
@@ -166,7 +184,7 @@ var config = {
         views:[
           {
             name: "Overview Private",
-            title: "Private Calendars",
+            title: "Family Calendar",
             mode: "daily",
             type: "row",
             position: "bottom_bar",
@@ -199,6 +217,7 @@ var config = {
         ],
       },
     },
+
   ]
 
 };

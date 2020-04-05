@@ -8,7 +8,10 @@
  * Add any custom CSS below.                         *
  * Changes to this files will be ignored by GIT. *
  *****************************************************/
-
+.module-header{
+    color: #f5f5f5;
+    font-size: 20px;
+}
 .align-center {
     text-align: center;
 }
@@ -29,15 +32,14 @@
     text-transform: uppercase;
     font-size: 15px;
     font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
-    font-weight: 400;
+    font-weight: bold;
     border-bottom: 1px solid #666;
     line-height: 15px;
     padding-bottom: 5px;
     margin-bottom: 10px;
-    color: #999;
 }
 .CX2 .today .slotHeader * {
-    color: inherit;
+    color: #ffffff;
 }
 .CX2 .event.fullday {
     color: inherit;
