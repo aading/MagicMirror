@@ -8,26 +8,32 @@
  * Add any custom CSS below.                         *
  * Changes to this files will be ignored by GIT. *
  *****************************************************/
-.module-header{
+.module-header {
     color: #f5f5f5;
     font-size: 20px;
 }
+
 .align-center {
     text-align: center;
 }
-.CX2 .daily .event .eventTitle{
+
+.CX2 .daily .event .eventTitle {
     white-space: pre-wrap;
 }
+
 .CX2 .agenda .eventSub {
-    display:none;
+    display: none;
 }
+
 .CX2 .daily .fullday .eventTime {
-    display:none;
+    display: none;
 }
-.CX2 .slot .event{
+
+.CX2 .slot .event {
     background: inherit;
 }
-.CX2 .slot .slotHeader{
+
+.CX2 .slot .slotHeader {
     background-color: inherit;
     text-transform: uppercase;
     font-size: 15px;
@@ -38,24 +44,38 @@
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
+
 .CX2 .today .slotHeader * {
     color: #ffffff;
 }
+
 .CX2 .event.fullday {
     color: inherit;
 }
+
 .CX2 .slot .slotFooter {
     display: none;
 }
+
 .CX2 .event[data-calendar-name="family"],
 .CX2 .event[data-calendar-name="family"] {
     border-left: #ce4138 solid;
 }
+
 .CX2 .event[data-calendar-name="aaron"],
 .CX2 .event[data-calendar-name="aaron"] {
     border-left: #c632ff solid;
 }
+
 .CX2 .event[data-calendar-name="holiday"],
 .CX2 .event[data-calendar-name="holiday"] {
     border-left: #d2cf2a solid;
+}
+
+#GPHOTO_BACK {
+    display: none;
+}
+
+#GPHOTO_INFO {
+    display: none;
 }
