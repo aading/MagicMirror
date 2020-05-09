@@ -79,6 +79,7 @@ var config = {
         showWindow: true,
         celcius: false,
         showVentilation: true,
+        showNotifications: false,
         showLights: false,
         audioNotifications: false,
         showTrend: true,
