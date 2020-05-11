@@ -159,7 +159,7 @@ var config = {
       position: "top_left",
       config: {
         albums: ["Mirror Select"], // Set your album name. like ["My wedding", "family share", "Travle to Paris"]
-        updateInterval: 1000 * 60, // minimum 10 seconds.
+        updateInterval: 1000 * 40, // minimum 10 seconds.
         sort: "random", // "old", "random"
         uploadAlbum: null, // Only album created by `create_uploadable_album.js`.
         condition: {
@@ -173,8 +173,8 @@ var config = {
           maxWHRatio: null,
           // WHRatio = Width/Height ratio ( ==1 : Squared Photo,   < 1 : Portraited Photo, > 1 : Landscaped Photo)
         },
-        showWidth: 800, // These values will be used for quality of downloaded photos to show. real size to show in your MagicMirror region is recommended.
-        showHeight: 600,
+        showWidth: 1000, // These values will be used for quality of downloaded photos to show. real size to show in your MagicMirror region is recommended.
+        showHeight: 1000,
         timeFormat: "YYYY/MM/DD HH:mm", // Or `relative` can be used.
       }
     },
