@@ -79,3 +79,7 @@
 #GPHOTO_INFO {
     display: block;
 }
+
+#GPHOTO_CURRENT {
+    background-position: left;
+}

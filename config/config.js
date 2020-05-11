@@ -173,8 +173,8 @@ var config = {
           maxWHRatio: null,
           // WHRatio = Width/Height ratio ( ==1 : Squared Photo,   < 1 : Portraited Photo, > 1 : Landscaped Photo)
         },
-        showWidth: 1000, // These values will be used for quality of downloaded photos to show. real size to show in your MagicMirror region is recommended.
-        showHeight: 1000,
+        showWidth: 800, // These values will be used for quality of downloaded photos to show. real size to show in your MagicMirror region is recommended.
+        showHeight: 800,
         timeFormat: "YYYY/MM/DD HH:mm", // Or `relative` can be used.
       }
     },
