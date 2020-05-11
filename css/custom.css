@@ -83,3 +83,6 @@
 #GPHOTO_CURRENT {
     background-position: left;
 }
+#GPHOTO {
+    position: absolute;
+}
