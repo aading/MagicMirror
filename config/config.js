@@ -30,6 +30,13 @@ var config = {
       module: "alert",
     },
     {
+      module: 'MMM-ModuleScheduler',
+      config: {
+        // SHOW MODULES WITH THE CLASS 'daytime_scheduler' AT 06:00 AND HIDE AT 22:00 EVERY DAY
+        global_schedule: {from: '0 7 * * *', to: '59 23 * * *', groupClass: 'daytime_scheduler'},
+      }
+    },
+    {
       module: "updatenotification",
       position: "top_bar"
     },
@@ -122,28 +129,9 @@ var config = {
         ]
       }
     },
-    // {
-    //   module: 'MMM-Scrobbler',
-    //   position: 'top_right',
-    //   config: {
-    //     username: 'aarondkk',
-    //     apikey: '99deb2c2033ae44616de4cbd7d7d7e84',
-    //     //time interval to search for new song (every 15 seconds)
-    //     updateInterval: 15 * 1000,
-    //     //how often should we try to retrieve a song if not listening
-    //     delayCount: 5,
-    //     //time interval to search for new song if the 5 times not listening is received.
-    //     //set this to the same number as updateInterval to ignore this option
-    //     delayInterval: 120*1000,
-    //     animationSpeed: 1000,
-    //     showAlbumArt: true,
-    //     showMetaData: true,
-    //     //Determines the position of the meta text. Possible values: top, bottom, left, right
-    //     alignment: "bottom",
-    //   }
-    // },
     {
       module: 'MMM-Trello',
+      classes: 'daytime_scheduler',
       header: 'Home Reminder',
       position: 'top_right', // This can be any of the regions, best results in center regions.
       config: {
@@ -156,6 +144,7 @@ var config = {
     },
     {
       module: "MMM-GooglePhotos",
+      classes: 'daytime_scheduler',
       position: "top_left",
       config: {
         albums: ["Mirror Select"], // Set your album name. like ["My wedding", "family share", "Travle to Paris"]
@@ -180,6 +169,7 @@ var config = {
     },
     {
       module: "MMM-AVStock",
+      classes: 'daytime_scheduler',
       position: "bottom_bar", //"bottom_bar" is better for `mode:ticker`
       config: {
         apiKey : "76JZ6Y8GVAVTDQ0S", // https://www.alphavantage.co/
