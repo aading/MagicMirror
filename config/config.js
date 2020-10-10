@@ -80,8 +80,8 @@ var config = {
       position: 'top_left',
       header: 'Temperature / Humidity',  // This is optional
       config: {
-        gatewayIP: '192.168.1.75',
-        gatewayToken: '38f23cda57f2a22963338f03aa4d0b59',
+        gatewayIP: '192.168.50.75',
+        gatewayToken: 'd3ea3f7c9096c2f256e43f695c047d69',
         outsideSensorId: '158d000223f705',
         showWindow: true,
         celcius: false,
